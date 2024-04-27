@@ -45,6 +45,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="Search"
+                android:paddingTop="10dp"
                 android:inputType="text">
 
             </com.google.android.material.textfield.TextInputEditText>
@@ -53,6 +54,7 @@
                 android:id="@+id/btnSearch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingTop="10dp"
                 android:layout_gravity="center|right|end"
                 android:text="Search" />
 

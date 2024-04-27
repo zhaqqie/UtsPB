@@ -23,7 +23,7 @@ import retrofit2.Response;
 public class DetailActivity extends AppCompatActivity {
 
     private ProgressBar progressBarDetail;
-    private TextView nameDetail, usernameDetail, ageDetail;
+    private TextView nameDetail, usernameDetail, bioDetail;
     private ImageView avatarDetail;
 
     @SuppressLint("MissingInflatedId")
@@ -42,7 +42,7 @@ public class DetailActivity extends AppCompatActivity {
 
             nameDetail = findViewById(R.id.nameDetail);
             usernameDetail = findViewById(R.id.usernameDetail);
-            ageDetail = findViewById(R.id.ageDetail);
+            bioDetail = findViewById(R.id.bioDetail);
             avatarDetail = findViewById(R.id.avatarDetail);
 
             progressBarDetail.setVisibility(View.VISIBLE);
@@ -55,7 +55,7 @@ public class DetailActivity extends AppCompatActivity {
                         if (user != null){
                             usernameDetail.setText("Username : " + user.getUsername());
                             nameDetail.setText("Name : " + user.getName());
-                            ageDetail.setText("Age : " + user.getAge());
+                            bioDetail.setText("Bio : " + user.getBio());
                             Picasso.get().load(user.getAvatarUrl()).into(avatarDetail);
                         }else {
                             Toast.makeText(DetailActivity.this, "Failed to get user data", Toast.LENGTH_SHORT).show();

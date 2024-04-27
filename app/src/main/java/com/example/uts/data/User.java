@@ -10,7 +10,7 @@ public class User {
     private String avatarUrl;
 
     private String name;
-    private String age;
+    private String bio;
 
     public String getUsername() {
         return username;
@@ -24,7 +24,7 @@ public class User {
         return name;
     }
 
-    public String getAge() {
-        return age;
+    public String getBio() {
+        return bio;
     }
 }

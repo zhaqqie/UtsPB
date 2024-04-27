@@ -43,21 +43,20 @@ public class GithubUserAdapter extends RecyclerView.Adapter<GithubUserAdapter.Vi
             Intent intent = new Intent(click.getContext(), DetailActivity.class);
             intent.putExtra("nameDetail", user.getName());
             intent.putExtra("usernameDetail", user.getUsername());
-            intent.putExtra("ageDetail", user.getAge());
+            intent.putExtra("bioDetail", user.getBio());
             intent.putExtra("avatarDetail", user.getAvatarUrl());
             click.getContext().startActivity(intent);
         });
     }
+
     @Override
     public int getItemCount() {
         return users.size();
     }
 
     static class ViewHolder extends RecyclerView.ViewHolder {
-
         ImageView imgAvatar;
         TextView txtName;
-
         public ViewHolder(View itemView) {
             super(itemView);
 
