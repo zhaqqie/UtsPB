@@ -48,6 +48,7 @@ public class GithubUserAdapter extends RecyclerView.Adapter<GithubUserAdapter.Vi
             click.getContext().startActivity(intent);
         });
     }
+
     @Override
     public int getItemCount() {
         return users.size();
