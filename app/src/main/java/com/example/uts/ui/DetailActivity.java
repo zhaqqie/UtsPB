@@ -26,6 +26,7 @@ public class DetailActivity extends AppCompatActivity {
     private TextView nameDetail, usernameDetail, ageDetail;
     private ImageView avatarDetail;
 
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
